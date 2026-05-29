@@ -1,0 +1,23 @@
+[project]
+name = "test-pubsub-trio"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "abbrowne126",email = "81702808+abbrowne126@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "google-cloud-pubsub (>=2.38.0,<3.0.0)",
+    "trio (>=0.33.0,<0.34.0)",
+    "pytest (>=9.0.3,<10.0.0)",
+    "anyio (>=4.13.0,<5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "test_pubsub_trio", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
